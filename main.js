@@ -53,6 +53,11 @@ const Questions = [
         Questions: "is C language old?",
         Answer: "YES",
     },
+
+    {
+        Questions: "When was PHP invented?",
+        Answer: "1994",
+    },
 ].sort(() => Math.random() - 0.5);
 
 
@@ -77,3 +82,9 @@ for(key in Questions){
         alert("You passed!");
 
     }
+
+
+
+function reset(){
+    location.reload();
+}
