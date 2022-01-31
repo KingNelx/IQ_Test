@@ -40,8 +40,13 @@ const Questions = [
     },
 
     {
-        Questions: "Is Java and Python are same robust language?",
-        Answer: "YES",
+        Questions: "When was the first programming language created?",
+        Answer: "1954",
+    },
+
+    {
+        Questions: "When was the first programming language release?",
+        Answer: "1957",
     },
 ].sort(() => Math.random() - 0.5);
 
