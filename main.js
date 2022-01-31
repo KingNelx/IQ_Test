@@ -48,6 +48,11 @@ const Questions = [
         Questions: "When was the first programming language release?",
         Answer: "1957",
     },
+
+    {
+        Questions: "is C language old?",
+        Answer: "YES",
+    },
 ].sort(() => Math.random() - 0.5);
 
 
