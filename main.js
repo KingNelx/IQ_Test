@@ -1,75 +1,43 @@
-const question = [
+const Questions = [
     {
-        Question: "When was Java  Invented? ",
-        Answer: 1995,
+        Questions: "Who invented Computers?",
+        Answer: "CHARLES BABBAGE",
     },
 
     {
-        Question: "When was Python Invented? ",
-        Answer: 1991,
+        Questions: "Test Question2",
+        Answer: "ANSWER2",
     },
 
     {
-        Question: "When was Javascript Invented? ",
-        Answer: 1995,
+        Questions: "Test Question3",
+        Answer: "ANSWER3",
     },
 
     {
-        Question: "When was C++ Invented? ",
-        Answer: 1985,
+        Questions: "Test Question4",
+        Answer: "ANSWER4",
     },
-
-    {
-        Question: "When was Cobol Invented? ",
-        Answer: 1959,
-    },
-
-    {
-        Question: "When was Linux Invented? ",
-        Answer: 1991,
-    },
-
-    {
-        Question: "When was Windows Invented? ",
-        Answer: 1985,
-    },
-
-    {
-        Question: "When was ReactJs Invented? ",
-        Answer: 2013,
-    },
-
-    {
-        Question: "When was VueJs Invented? ",
-        Answer: 2014,
-    },
-
-    {
-        Question: "Is Java the Best language ? ",
-        Answer: "yes",
-    },
-
 ].sort(() => Math.random() - 0.5);
 
+let score = 0;
 
-const wrongMsg = [
-    "Wrong Answer Mother Fucker !",
-    "You are idiot wrong Answer !",
-    "You are a stupid idiot !",
-];
+alert(" Answers are case sensitive, so make sure to enter them correctly and into lowercase only. ");
 
-
-
-for (let i = 0; i < question.length; i++) {
-     let questions = prompt(question[i].Question);
-    if (questions == question[i].Answer) {
+for(key in Questions){
+    let question = prompt(Questions[key].Questions);
+    if(question == Questions[key].Answer.toLocaleLowerCase()){
         alert("Correct!");
+        score++;
     }else{
-        alert(wrongMsg[Math.floor(Math.random() * wrongMsg.length)]);
+        alert("Incorrect!");
     }
 }
 
+    alert("You got " + score + " out of " + Questions.length);
+    if(score < Questions.length/2){
+        alert("You failed!");
+    }else{
+        alert("You passed!");
 
-function reload(){
-    location.reload();
-}
+    }
