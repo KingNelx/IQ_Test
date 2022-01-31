@@ -5,18 +5,18 @@ const Questions = [
     },
 
     {
-        Questions: "Test Question2",
-        Answer: "ANSWER2",
+        Questions: "Who has invented JavaScript?",
+        Answer: "BRENDAN EICH",
     },
 
     {
-        Questions: "Test Question3",
-        Answer: "ANSWER3",
+        Questions: "Who has invented Python?",
+        Answer: "GUIDO VAN ROSSUM",
     },
 
     {
-        Questions: "Test Question4",
-        Answer: "ANSWER4",
+        Questions: "Which company owns SQL?",
+        Answer: "MICROSOFT CORPORATION" || "MICROSOFT",
     },
 ].sort(() => Math.random() - 0.5);
 
