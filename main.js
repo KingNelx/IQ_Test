@@ -16,9 +16,35 @@ const Questions = [
 
     {
         Questions: "Which company owns SQL?",
-        Answer: "MICROSOFT CORPORATION" || "MICROSOFT",
+        Answer: "MICROSOFT CORPORATION",
+    },
+
+    {
+        Questions: "Java was created at which company?",
+        Answer: "SUN MICROSYSTEMS",
+    },
+
+    {
+        Questions: "Who names Java?",
+        Answer: "JAMES GOSLING",
+    },
+
+    {
+        Questions: "What is the first most popular programming language (According to StackOverFlow)?",
+        Answer: "JAVASCRIPT",
+    },
+
+    {
+        Questions: "Is Java and Python are same robust language?",
+        Answer: "YES",
+    },
+
+    {
+        Questions: "Is Java and Python are same robust language?",
+        Answer: "YES",
     },
 ].sort(() => Math.random() - 0.5);
+
 
 let score = 0;
 
